@@ -136,6 +136,10 @@ public class CustomList<T> {
                 temp = temp.next;
 
             }
+            temp.next = null;
+            Node temp2 = tail;
+            tail = temp;
+            return temp2.value;
 
 
         }
