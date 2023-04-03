@@ -111,6 +111,36 @@ public class CustomList<T> {
 
 
     }
+    public T removeLast()
+    {
+        if(head==null)
+        {
+            throw new NoSuchElementException();
+
+
+        }
+        else if(head==tail)
+        {
+            Node temp = head;
+            head = null;
+            tail = null;
+            return temp.value;
+
+        }
+        else
+        {
+
+            Node temp = head;
+            while(temp.next != tail)
+            {
+                temp = temp.next;
+
+            }
+
+
+        }
+
+    }
 
 
 }
